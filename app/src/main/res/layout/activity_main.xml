@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_set_color"
+            android:text="设置颜色"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <Button
+            android:id="@+id/btn_pattle_color"
+            android:text="吸取颜色"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <ImageView
+            android:id="@+id/img_color"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/story_player_collection_pressed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+
+    <com.like.LikeButton
+        android:id="@+id/likebutton_view_favor"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:anim_scale_factor="2"
+        android:layout_centerInParent="true"
+        app:icon_size="25dp"
+        app:icon_type="heart"
+        app:is_enabled="true"
+        app:like_drawable="@drawable/story_player_collection_normal"
+        app:liked="false"
+        app:unlike_drawable="@drawable/story_player_collection_pressed" />
+</RelativeLayout>
